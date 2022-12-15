@@ -1,0 +1,229 @@
+*{
+    padding:0px;
+    font-family: "DM Sans", sans-serif;;
+}
+nav{
+    display:flex;
+    background-color: #257cff;
+    padding:5px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+nav > button{
+    height:40px;
+    margin:auto;
+    padding:0px 25px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+}
+
+nav >a > h1{
+    color:#ffffff;
+}
+nav a{
+    text-decoration: none;
+}
+.sbtn{
+    background-color:#fff;
+    color:#3498db;
+}
+.sbtn:hover{
+    background-color: #184fa3;
+}
+.sbtn a:hover{
+    background-color: #184fa3;
+    color:white;
+}
+.header{
+    display: block;
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+#socialmedia{
+    display:flex;
+    gap:15px;
+
+}
+.socialmedia a{
+    color:white;
+}
+#middle{
+    display:flex
+}
+#middle > .middle {
+    width:50%;
+    font-family: Montserrat, sans-serif;
+}
+.middle:nth-child(2) > img{
+    width:100%;
+}
+#middle{
+    background-color: #184fa3;
+    color:#ffffff;
+}
+.middle:nth-child(1){
+    padding-left: 80px;
+    font-size:30px;
+}
+#middle > div {
+    margin-top: 70px;
+}
+
+#playstore{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    width:100%;
+    margin:auto;
+}
+#playstore div:nth-child(1) img:nth-child(1){
+    margin-bottom: 40px;
+}
+#middle2>h1,#middle2 > h3,#middle2 + h1{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    margin-top: 50px;
+}
+#btn{
+    width:20%;
+    margin:auto;
+    border:2px solid green;
+}
+#middle2 + h1 +  div img{
+    width:100%;
+}
+#smartwatch,#needs, #viewprogress{
+    width:85%;
+    margin:auto;
+    display:flex;
+}
+
+#smartwatch img,#needs img, #viewprogress img{
+    width:100%;
+}
+
+
+/* SLIDESHOW STARTS HERE */
+.container{
+    height: 250px;
+    margin:auto;
+    position: relative;
+    width: 90%;
+    display:grid;
+    place-items: center;
+    overflow:hidden;
+}
+.slide-container{
+    display:flex;
+    width:calc(250px * 18);
+    animation:scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9 ));
+    }
+}
+.slide-image{
+    height: 150px;
+    width:150px;
+    display:flex;
+    align-items: center;
+    padding:15px;
+    perspective: 100px;
+    
+}
+img{
+    width:100%;
+    transition:transform 1s;
+}
+/* img:hover{
+    transform: translateZ(20px);
+} */
+/* SLIDESHOW ENDS HERE */
+
+/* BOTTON STYLE STARTS HERE */
+.btncontainer{
+    text-align: center;
+    margin-top:0px;
+}
+.btn{
+    border:1px solid #3498db;
+    background:none;
+    padding:10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin:10px;
+    transition: 0.8s;
+    position: relative;
+    overflow:hidden;
+}
+.btn1,.btn2{
+    color:#fff;
+}
+.btn1:hover,.btn2:hover{
+    color:#3498db;
+}
+.btn::before{
+    content: "";
+    position:absolute;
+    left:0;
+    width:100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.btn1::before,.btn2::before{
+    top:0;
+    border-radius:0 0 50% 50%;
+    height:180%;
+}
+.btn1:hover::before,.btn2:hover::before{
+    height: 0%;
+}
+/* BUTTON STYLE ENDS HERE */
+.checkmark{
+    width:5px;
+}
+/* PLANS STARTS HERE */
+#plans{
+    width:70%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: space-evenly;
+}
+.plan{
+    background-color: #404040;
+    color:white;
+    padding:20px;
+}
+.plan h1,.plan h3 {
+    margin-left: 30px;
+}
+#plans + h1, #plans+h1+h3{
+    text-align: center;
+}
+.footer a{
+    display: block;
+    padding:5px;
+    
+}
+#footer{
+    display:flex;
+    margin-top:100px;
+}
+.footer{
+    width:90%;
+    text-align: left;
+    margin-left:70px;
+}
