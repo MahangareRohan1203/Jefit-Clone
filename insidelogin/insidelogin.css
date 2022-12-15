@@ -1,0 +1,15 @@
+#container{
+    width:600px;
+    height: 300px;
+     border:2px solid red;
+}
+.cup{
+    width:25%;
+}
+.cup img{
+    width:100%;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
