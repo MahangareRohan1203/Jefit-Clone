@@ -1,15 +1,77 @@
 #container{
-    width:600px;
+    margin:15px;
+    display: flex;
+    /* grid-auto-columns: 450px;
+    grid-template-rows: 350px; */
+    box-sizing: border-box;
+    overflow:auto;
+    gap:10px;
+    width:96%;
+    padding:15px;
     height: 300px;
-     border:2px solid red;
 }
-.cup{
-    width:25%;
+td i {
+    font-size: 25px;
+}
+td {
+    padding:3px 0;
+    border-bottom: 1px solid gray;
+}
+#container > div {
+    height: 95%;
+    box-sizing: border-box;
+    overflow:visible;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container h6 ,#container button  {
+    display:block;
+    text-align: center;
+    margin:9px auto;
+    
+}
+#container button{
+    border-radius: 3px;
+    border: none;
+    width:90%;
+    padding:5px;
+    color:white;
+    background-color:#33b5e5;
+}
+#container button:hover{
+    background-color: whitesmoke;
+    border:1px solid blue;
+    color:black;
 }
 .cup img{
-    width:100%;
+    width:150px;
 }
 *{
     margin:0px;
     padding:0px;
+}
+#toolsResource{
+    display:flex;
+}
+#toolsResource > div{
+    padding:5px 20px;
+    border:1px solid black;
+    margin:2px;
+}
+#outsidecontainer{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#activeusers{
+    /* margin-top: 200px; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    row-gap: 15px;
+    padding:10px;
+}
+#activeusers img{
+    width:80%;
+    display:block;
+    margin:auto;
+    border-radius: 50%;
 }

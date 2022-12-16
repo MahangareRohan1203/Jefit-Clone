@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./insidelogin.css">
 </head>
 <body>
-    <div>
-        <div>
-            <img src="" alt="" style="display: block;">
-            <table>
+    <div style="width:75%; justify-content: space-between;margin:auto; display: flex;">
+        <div style="width:25%;">
+            <img style="width:80%; display: block; margin:auto; border-radius: 50%;" src="https://www.jefit.com/images/noProfilePic220.png" alt="" style="display: block;">
+            <table style="margin:10px 50px">
                 <tbody>
                     <tr>
                         <td><i class="fa-solid fa-calendar-check"></i>
@@ -20,23 +20,24 @@
                     </tr>
                     <tr>
                         <td><i class="fa-brands fa-blogger"></i>
-                        </td><td>My Routines</td>
+                        </td><td>My Logs</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-calendar-check"></i>
-                        </td><td>My Routines</td>
+                        <td><i class="fa-regular fa-id-card"></i>
+                        </td><td>My Reports</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-calendar-check"></i>
-                        </td><td>My Routines</td>
+                        <td><i class="fa-solid fa-image"></i>
+                        </td><td>My Photos</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-calendar-check"></i>
-                        </td><td>My Routines</td>
+                        <td><i class="fa-sharp fa-solid fa-dumbbell"></i>
+                        </td>
+                        <td>My Exercises</td>
                     </tr>
                     <tr>
-                        <td><i class="fa-solid fa-calendar-check"></i>
-                        </td><td>My Routines</td>
+                        <td><i class="fa-sharp fa-solid fa-message"></i>
+                        </td><td>My Messages</td>
                     </tr>
                     <tr>
                         <td><i class="fa-solid fa-calendar-check"></i>
@@ -44,36 +45,55 @@
                     </tr>
                 </tbody>
             </table>
+            <div style="margin-top: 200px;"><h4>Active Users</h4></div>
+            <div id="activeusers"></div>
         </div>
-        <div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt natus dolores earum ullam doloremque aliquid corporis neque? Incidunt ut quasi numquam officia, beatae dignissimos inventore qui. Recusandae qui velit a!
-                <img src="https://www.jefit.com/assets/img/icons/appstore/app_store_badge.png" alt=""><img src="https://www.jefit.com/assets/img/icons/appstore/google_play_badge.png" alt="">
+        <div style="width: 70%;">
+            <div  style="border:3px solid gray; display:flex; height: 300px;">
+                <div style="width:70%;padding:10px; ">
+                    <h2 style="color:gray; line-height: 1.6;letter-spacing: 3px;">Welcome to Befit ! Download the app to start sharing your fitness stats on Discord!</h2>
+                    <img style="width:40%;margin:90px auto 0 auto;" src="https://www.jefit.com/assets/img/icons/appstore/app_store_badge.png" alt="">
+                    <img style="width:40%;margin:0 30px;" src="https://www.jefit.com/assets/img/icons/appstore/google_play_badge.png" alt="">
+                </div>
+                <div>
+                    <img style="margin:30px 10px" src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://sy95h.app.goo.gl/NZnts" alt="">
+                </div>
             </div>
-            <div>
-                <img src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https://sy95h.app.goo.gl/NZnts" alt="">
+
+
+            <div><button>Home</button><button>Body Stats</button><button>Training Stats</button><button>Progress Photos</button>
             </div>
-        </div>
-        <div><button>Home</button><button></button><button></button><button></button>
-        </div>
-        <h5>Status</h5>
-        <div>
-            <input type="text"> <button>Post</button>
-        </div>
-        <h5>Tools & Resources</h5>
-        <div><button></button><button></button><button></button></div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facilis reprehenderit iusto necessitatibus esse voluptatum illum, perferendis ratione, fugit exercitationem aut voluptatem dignissimos mollitia. Quo magni in voluptas facere itaque?</div>
-    </div>
-    <div>
-        <div></div>
-        <div id="container">Hello rohan
-            <div class="cup">
-                <img src="https://www.jefit.com/assets/customavatars/avatar6610068_2.gif" alt="">
-                Jens Good Life
-                <h6>featured Community Member</h6>
-                <button>Add</button>
+            <h5 style="padding:20px 0 15px 0">Status:</h5>
+            <div style="border:1px solid black;padding:10px;">
+                <input style="width:630px;height:30px; border:none" placeholder="Update your status...(or share your youtube video)" type="text"> <button>Post</button>
             </div>
+            <h5>Tools & Resources</h5>
+            <div id="toolsResource">
+                <div><i class="fa-solid fa-dumbbell"></i>Log Workout</div>
+            <div><i class="fa-solid fa-person"></i>Body Stats</div>
+            <div><i class="fa-solid fa-camera"></i>Progress Pic</div></div>
+            <div style="background-color: #d9edf7; border:1px solid #2caae9; Padding:3px;margin:20px 0;">
+                Please activate your BEFIT account by clicking the link in your activation email. Only email activated accounts are allowed to post or upload pictures. <br/>
+                - If you need to change your email address, click here. <br/>
+                - If you need to resend the activation email, click here.</div>
+                <div style="margin:20px 0">Activity Feed</div>
+            <div id="outsidecontainer">
+                <div><p>Suggested Friends</p></div>
+                <div id="container">
+                    <div class="cup">
+                        <img src="https://www.jefit.com/assets/customavatars/avatar6610068_2.gif" alt="">
+                        <h6>   Jens Good Life   </h6>
+                        <h6>featured Community Member</h6>
+                        <button>Add</button>
+                    </div>
+                </div>
+                
+            </div>
+            <button>My Circle</button><button>Q & A</button>
+            <p style="margin:20px 0;">No activity to show at this time. Record logs and data or add friends to see more status updates</p>
         </div>
-    </div>
+    </div>   
+    
 
 </body>
 <script src="./insidelogin.js"></script>
