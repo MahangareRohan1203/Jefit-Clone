@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: "DM Sans", sans-serif;;
+}
+#plans{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+    justify-content: space-evenly;
+
+}
+.discount{
+    background-color: #cb1a2f;
+    width:100%;
+    text-align: center;
+    
+    padding:15px auto;
+}
+.cup button {
+    width:80%;
+    padding:15px;
+    display:block;
+    margin:auto;
+    background-color: #818a91;
+}
