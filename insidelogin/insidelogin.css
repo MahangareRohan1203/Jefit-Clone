@@ -71,7 +71,69 @@ td {
 }
 #activeusers img{
     width:80%;
+    /* height:80%; */
     display:block;
     margin:auto;
     border-radius: 50%;
+}
+#activeusers div{
+    width:100%;
+}
+
+/* nav bar css */
+
+nav{
+    display:flex;
+    background-color: #257cff;
+    padding:5px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+nav > button{
+    height:40px;
+    margin:auto;
+    padding:0px 25px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: none;
+}
+
+nav >a > h1{
+    color:#ffffff;
+}
+nav a{
+    text-decoration: none;
+    display:block;
+    margin:auto;
+    color:#fff;
+}
+button a{
+    color:#184fa3;
+}
+.sbtn{
+    background-color:#fff;
+    color:#3498db;
+}
+.sbtn:hover{
+    background-color: #184fa3;
+}
+.sbtn a:hover{
+    background-color: #184fa3;
+    color:white;
+}
+
+/* FOOTER CSS */
+.footer a{
+    display: block;
+    padding:5px;
+    text-decoration: none;
+}
+#footer{
+    display:flex;
+    margin:100px auto;
+}
+.footer{
+    width:90%;
+    text-align: left;
+    margin-left:150px;
 }

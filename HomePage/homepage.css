@@ -216,7 +216,7 @@ img{
 .footer a{
     display: block;
     padding:5px;
-    
+    text-decoration: none;
 }
 #footer{
     display:flex;
