@@ -3,7 +3,7 @@ body{
     padding:0;
 }
 #video{
-    border:2px solid red;
+
     /* width:800px; */
     position: fixed;
     z-index:-1;

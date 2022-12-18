@@ -27,7 +27,7 @@ for(let i=0;i<images.length;i++){
     let button = document.createElement("button");
     button.innerText = "Add";
     button.addEventListener("click",()=>{
-        alert("Hello")
+        alert("Added")
         friends.push({image:images[i],Name:names[i]})
         localStorage.setItem("friends",JSON.stringify(friends))
     })
